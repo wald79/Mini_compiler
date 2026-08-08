@@ -34,6 +34,7 @@
 
 The compilation pipeline converts custom source files into compiled native binaries through three distinct phases:
 
+```text
 ┌──────────────────┐      ┌──────────────────┐      ┌───────────────────┐      ┌─────────────────┐
 │   Source Code    │ ───> │  Lexical         │ ───> │  Recursive        │ ───> │  C Code         │
 │   (*.tiny)       │      │  Analyzer        │      │  Descent Parser   │      │  Emitter        │
@@ -44,6 +45,7 @@ The compilation pipeline converts custom source files into compiled native binar
                                                                              │ Native Binary   │
                                                                              │ (via GCC/Clang) │
                                                                              └─────────────────┘
+```
 
 ### 1. Lexical Analyzer (`lexer.py`)
 Scans raw source text character-by-character, recognizes language primitives (keywords, variables, literal values, and comparison operators), and streams strongly-typed tokens to the parser.
