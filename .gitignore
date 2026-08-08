@@ -1,0 +1,14 @@
+# Python / Bytecode
+__pycache__/
+*.pyc
+
+# C/C++ build files (if applicable)
+*.o
+*.exe
+
+# Generated output files
+*.out
+
+# Environment files
+.env
+.vscode/
